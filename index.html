@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <style>
         @media print {
             input {
@@ -10,7 +14,7 @@
 
         .table {
             display: block;
-            padding: 4px 6px;
+            padding: 4px 6px 0px 0px;
             clear: both;
             color: #4DB8FF;
             width: 100%;
@@ -35,308 +39,316 @@
 </head>
 <body>
     <input type="button" value="Print" onclick="printPage()" />
+    <input type="button" value="Expand" id="expand_panel" />
     <div>
         <center><h1  class="margin_zero">Rajeeva Acharya</h1>rajeeva.acharya@collabera.com</center>
     </div>
-    <div>
+    <div class="test_accordion">
+        <h2 class="margin_zero">Present Summary: </h2>
         <div>
-            <h2 class="margin_zero">Present Summary: </h2>
-        </div>
-        <div></div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
-            <span class="value">Collabera Solutions</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-            <span class="value">Senior Engineer (Developer)</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
-            <span class="value">5 months</span>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h2 class="margin_zero">Past Summary: </h2>
-        </div>
-        <div></div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
-            <span class="value">Pointcross Pvt Ltd </span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-            <span class="value">Senior Engineer (Developer)</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
-            <span class="value">2.6 Years (Jan - 2010 to Sept-2012)</span>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h2 class="margin_zero">Education: </h2>
-        </div>
-        <div></div>
-        <div class="table">
-            <span class="value">B Tech in Instrumentation Technology, Visvesvaraya Technological University, Belgaum, India, 2005-2009</span>
-        </div>
-        <div class="table">
-            <span class="value">12th, (Physics, Chemistry, Math, Biology), PU Board, Bangalore, 2002</span>
-        </div>
-        <div class="table">
-            <span class="value">10th, State Board, Karnataka</span>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h2 class="margin_zero">Technical Skills: </h2>
-        </div>
-        <div></div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Technical Skills: &nbsp;</b></span>
-            <span class="value">Windows XP/7</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Language: &nbsp;</b></span>
-            <span class="value">NET Framework 3.5/3.0/2.0, ASP.NET 2.0,C#, VB.NET, ADO.NET, XML, XSL, Ext-JS, JavaScript, Ajax, HTML, CSS and Object Oriented JavaScript, jQuery, Node-Js.</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Database: &nbsp;</b></span>
-            <span class="value">Oracle 9i/10g, SQL Server 2008, PostgresSQL 9, Redis</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
-            <span class="value">TortoiseSVN, Team Foundation Server, Git-Hub</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
-            <span class="value">Solr 3.3, R-Project, Fiddler</span>
-        </div>
-        <div class="table">
-            <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Secondary Skills (Domain experience): &nbsp;</b></span>
-            <span class="value">Pharmaceutical</span>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h2 class="margin_zero">Experience: </h2>
-        </div>
-        <div>
-            <div></div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #1: &nbsp;</b></span>
-                <span class="value">Node_Redis</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">Microsoft</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></td>
+                        <td>Collabera Solutions</td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></td>
+                        <td>Senior Engineer (Developer)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></td>
+                        <td>5 months</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--<div class="table">
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
+                <span class="value">Collabera Solutions</span>
             </div>
             <div class="table">
                 <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
+                <span class="value">Senior Engineer (Developer)</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div id="collapse_inline">Redis is an open-source, networked, in-memory, key-value data store with optional durability. It’s a NoSQL DB written is ANSI. Work here primarily involves supporting automation of unit test cases by building up a wrapper for Redis using Node-Js. The functions of Redis is exposed in Node-Js thus providing a way to simulate input and output of Redis commands</div>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Involved in coding and designing the functional modules</li>
-                        <li>Logical analysis for the functional flow of the module</li>
-                    </ol>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">Node-Js, Redis</span>
-            </div>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
+                <span class="value">5 months</span>
+            </div>-->
         </div>
+        <h2 class="margin_zero">Past Summary: </h2>
         <div>
             <div></div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #2: &nbsp;</b></span>
-                <span class="value">Test Harness</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">In-House</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
+                <span class="value">Pointcross Pvt Ltd </span>
             </div>
             <div class="table">
                 <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
+                <span class="value">Senior Engineer (Developer)</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div>Test harness is a product which checks the accessibility of a website. Accessibility checks includes supporting various MAS rule and after the rules are checked reports and graphs generated to which presents the overall pass/fails test percentage of the website</div>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
-                        <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
-                        <li>Follow the Microsoft best practices and guidelines for the Microsoft project initiatives</li>
-                        <li>Prepare and provide weekly status reports on the progress of the projects to the PMs</li>
-                    </ol>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">.Net MVC4, jQuery, MSSQL 2008</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
+                <span class="value">2.6 Years (Jan - 2010 to Sept-2012)</span>
             </div>
         </div>
+         <h2 class="margin_zero">Education: </h2>
         <div>
             <div></div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #3: &nbsp;</b></span>
-                <span class="value">SDIS and ToxVision Development</span>
+                <span class="value">B Tech in Instrumentation Technology, Visvesvaraya Technological University, Belgaum, India, 2005-2009</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">Food and Drug Administration USA (FDA), Roche, Ipsen, ISIS</span>
+                <span class="value">12th, (Physics, Chemistry, Math, Biology), PU Board, Bangalore, 2002</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div>SDIS is a product developed for pharmaceutical industries which normalizes data from source systems and reports into a single searchable data and metadata library. SDIS software searches the study data to extract identifiable patterns within the study. ToxVision++ is a multi-study viewer is used to review and analyze regulatory data submissions. The user can customize the ToxVision view by filtering and sorting data based on his/her interest. User can also view graphs and export data to various formats like XML, Excel, Word, XPT, and CSV. The module involves MVC architecture implementation where in View is handled by EXT-JS and model is COM Assembly. Various export formats are exported either by using openXML or OLEDB</div>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Handled a team consisting of 4 people within a Scrum environment</li>
-                        <li>Capture Functional Design Specification</li>
-                        <li>Follow the best practices and guidelines for the project initiatives</li>
-                        <li>Regressive R & D to explore new possibilities</li>
-                        <li>Assisting team with code development, code review and deployment</li>
-                    </ol>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">Ext-JS, OO-JS, C#, WCF, Solr 3.3, XSLT, Oracle and PostgresSql PLSQL</span>
+                <span class="value">10th, State Board, Karnataka</span>
             </div>
         </div>
+         <h2 class="margin_zero">Technical Skills: </h2>
         <div>
             <div></div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #4: &nbsp;</b></span>
-                <span class="value">ToxVision and ToxVision++ Development</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Technical Skills: &nbsp;</b></span>
+                <span class="value">Windows XP/7</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">Food and Drug Administration USA (FDA) and Johnson and Johnson (JnJ)</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Language: &nbsp;</b></span>
+                <span class="value">NET Framework 3.5/3.0/2.0, ASP.NET 2.0,C#, VB.NET, ADO.NET, XML, XSL, Ext-JS, JavaScript, Ajax, HTML, CSS and Object Oriented JavaScript, jQuery, Node-Js.</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Database: &nbsp;</b></span>
+                <span class="value">Oracle 9i/10g, SQL Server 2008, PostgresSQL 9, Redis</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div>ToxVision is an online Data Viewer, a tool of choice to view GLP nonclinical study data from any source developed for pharmaceuticals clients’ esp. FDA. The development involves enhancement of forms using and for fetching data from Database. Each view is a HTML form and is made interactive using iframes, spans and Object oriented JavaScript techniques and the data is rendered by a set of thematic sql queries which is nothing but pre written sql functions which would be stored and executed on client requests</div>
-                </span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
+                <span class="value">TortoiseSVN, Team Foundation Server, Git-Hub</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Handled a team consisting of 4 people within a Scrum environment</li>
-                        <li>Capture Functional Design Specification</li>
-                        <li>Development of application on different layers(UI, Web Service, backend, Database)</li>
-                        <li>Follow the best practices and guidelines for the project initiatives</li>
-                        <li>Regressive R & D to explore new possibilities</li>
-                        <li>Assisting team with code development, code review and deployment</li>
-                    </ol>
-                </span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
+                <span class="value">Solr 3.3, R-Project, Fiddler</span>
             </div>
             <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">XSL/XHTML, CSS, JavaScript, Asp, ADO.net(C#), Oracle PLSQL</span>
+                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Secondary Skills (Domain experience): &nbsp;</b></span>
+                <span class="value">Pharmaceutical</span>
             </div>
         </div>
+        <h2 class="margin_zero">Experience: </h2>
         <div>
-            <div></div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #5: &nbsp;</b></span>
-                <span class="value">MetaTaxonomy (ETL)</span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #1: &nbsp;</b></span>
+                    <span class="value">Node_Redis</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">Microsoft</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div id="collapse_inline">Redis is an open-source, networked, in-memory, key-value data store with optional durability. It’s a NoSQL DB written is ANSI. Work here primarily involves supporting automation of unit test cases by building up a wrapper for Redis using Node-Js. The functions of Redis is exposed in Node-Js thus providing a way to simulate input and output of Redis commands</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Involved in coding and designing the functional modules</li>
+                            <li>Logical analysis for the functional flow of the module</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">Node-Js, Redis</span>
+                </div>
             </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">Pointcross Pvt Ltd (In-House Project)</span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #2: &nbsp;</b></span>
+                    <span class="value">Test Harness</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">In-House</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div>Test harness is a product which checks the accessibility of a website. Accessibility checks includes supporting various MAS rule and after the rules are checked reports and graphs generated to which presents the overall pass/fails test percentage of the website</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
+                            <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
+                            <li>Follow the Microsoft best practices and guidelines for the Microsoft project initiatives</li>
+                            <li>Prepare and provide weekly status reports on the progress of the projects to the PMs</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">.Net MVC4, jQuery, MSSQL 2008</span>
+                </div>
             </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #3: &nbsp;</b></span>
+                    <span class="value">SDIS and ToxVision Development</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">Food and Drug Administration USA (FDA), Roche, Ipsen, ISIS</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div>SDIS is a product developed for pharmaceutical industries which normalizes data from source systems and reports into a single searchable data and metadata library. SDIS software searches the study data to extract identifiable patterns within the study. ToxVision++ is a multi-study viewer is used to review and analyze regulatory data submissions. The user can customize the ToxVision view by filtering and sorting data based on his/her interest. User can also view graphs and export data to various formats like XML, Excel, Word, XPT, and CSV. The module involves MVC architecture implementation where in View is handled by EXT-JS and model is COM Assembly. Various export formats are exported either by using openXML or OLEDB</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Handled a team consisting of 4 people within a Scrum environment</li>
+                            <li>Capture Functional Design Specification</li>
+                            <li>Follow the best practices and guidelines for the project initiatives</li>
+                            <li>Regressive R & D to explore new possibilities</li>
+                            <li>Assisting team with code development, code review and deployment</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">Ext-JS, OO-JS, C#, WCF, Solr 3.3, XSLT, Oracle and PostgresSql PLSQL</span>
+                </div>
             </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div>The Project involved processing of NCI Metathesaurus large data.NCI Metathesaurus is an online pharma dictionary consisting of pharmaceutical terms and its synonyms. Project included identifying reading and filtering the desired columns/Data and extracting the Data, its related meaning and synonyms and importation into Database. Most of the RDBMS techniques like ONE-ONE, ONE-MANY and MANY-MANY relations etc. were involved across different DB tables</div>
-                </span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #4: &nbsp;</b></span>
+                    <span class="value">ToxVision and ToxVision++ Development</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">Food and Drug Administration USA (FDA) and Johnson and Johnson (JnJ)</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div>ToxVision is an online Data Viewer, a tool of choice to view GLP nonclinical study data from any source developed for pharmaceuticals clients’ esp. FDA. The development involves enhancement of forms using and for fetching data from Database. Each view is a HTML form and is made interactive using iframes, spans and Object oriented JavaScript techniques and the data is rendered by a set of thematic sql queries which is nothing but pre written sql functions which would be stored and executed on client requests</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Handled a team consisting of 4 people within a Scrum environment</li>
+                            <li>Capture Functional Design Specification</li>
+                            <li>Development of application on different layers(UI, Web Service, backend, Database)</li>
+                            <li>Follow the best practices and guidelines for the project initiatives</li>
+                            <li>Regressive R & D to explore new possibilities</li>
+                            <li>Assisting team with code development, code review and deployment</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">XSL/XHTML, CSS, JavaScript, Asp, ADO.net(C#), Oracle PLSQL</span>
+                </div>
             </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Designing of a Database ER module</li>
-                        <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
-                        <li>Did performance and scalability test and improved the same wherever needed</li>
-                    </ol>
-                </span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #5: &nbsp;</b></span>
+                    <span class="value">MetaTaxonomy (ETL)</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">Pointcross Pvt Ltd (In-House Project)</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div>The Project involved processing of NCI Metathesaurus large data.NCI Metathesaurus is an online pharma dictionary consisting of pharmaceutical terms and its synonyms. Project included identifying reading and filtering the desired columns/Data and extracting the Data, its related meaning and synonyms and importation into Database. Most of the RDBMS techniques like ONE-ONE, ONE-MANY and MANY-MANY relations etc. were involved across different DB tables</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Designing of a Database ER module</li>
+                            <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
+                            <li>Did performance and scalability test and improved the same wherever needed</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">C# ADO.net, Oracle and PostgresSQL</span>
+                </div>
             </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">C# ADO.net, Oracle and PostgresSQL</span>
-            </div>
-        </div>
-        <div>
-            <div></div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #6: &nbsp;</b></span>
-                <span class="value">DSSTox and SDF</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                <span class="value">Innovative Medicines Initiative (IMI), Food and Drug Administration USA (FDA), Johnson and Johnson (JnJ)</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Developer</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                <span class="value">
-                    <div>The Project involved generation of Structure Data Format (SDF) files, commonly known as SD Files, that adhere to a strict format for representing multiple chemical structure records and associated data fields fetched from database by manipulation of SQL queries and reading definition/format from an XML file. The ETL part consisted of Extract data from an Excel, CSV or XPT using OLEDB and loading into our Universal Data Model (DB)</div>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                <span class="value">
-                    <ol>
-                        <li>Designing of a Database ER module</li>
-                        <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
-                        <li>Did performance and scalability test and improved the same wherever needed</li>
-                        <li>Developed a tool to validate the SD files which reduced manual comparison of the files</li>
-                    </ol>
-                </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                <span class="value">C#, VB Macro, Oracle PLSQL, HTML</span>
+            <div>
+                <div></div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #6: &nbsp;</b></span>
+                    <span class="value">DSSTox and SDF</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
+                    <span class="value">Innovative Medicines Initiative (IMI), Food and Drug Administration USA (FDA), Johnson and Johnson (JnJ)</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
+                    <span class="value">Developer</span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
+                    <span class="value">
+                        <div>The Project involved generation of Structure Data Format (SDF) files, commonly known as SD Files, that adhere to a strict format for representing multiple chemical structure records and associated data fields fetched from database by manipulation of SQL queries and reading definition/format from an XML file. The ETL part consisted of Extract data from an Excel, CSV or XPT using OLEDB and loading into our Universal Data Model (DB)</div>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
+                    <span class="value">
+                        <ol>
+                            <li>Designing of a Database ER module</li>
+                            <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
+                            <li>Did performance and scalability test and improved the same wherever needed</li>
+                            <li>Developed a tool to validate the SD files which reduced manual comparison of the files</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="table">
+                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
+                    <span class="value">C#, VB Macro, Oracle PLSQL, HTML</span>
+                </div>
             </div>
         </div>
     </div>
@@ -344,6 +356,22 @@
         function printPage() {
             window.print();
         }
+        $(function () {
+            $(".test_accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+            $('#expand_panel').click(function () {
+                if (this.value == 'Collapse') {
+                    this.value = 'Expand';
+                    $(".test_accordion .ui-accordion-content").hide();
+                } else {
+                    this.value = 'Collapse';
+                    $(".test_accordion .ui-accordion-content").show();
+                }
+            });
+        });
     </script>
 </body>
 </html>
