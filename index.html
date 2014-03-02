@@ -1,380 +1,383 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <style>
-        @media print {
-            input {
-                display: none;
-            }
-        }
-
-        .table {
-            display: block;
-            padding: 4px 6px 0px 0px;
-            clear: both;
-            color: #4DB8FF;
-            width: 100%;
-        }
-
-        .title .value {
-            color: #007ACC;
-            float: right;
-        }
-
-        .name {
-            color: #007ACC;
-            font: bold;
-            float: left;
-        }
-
-        .margin_zero {
-            margin-bottom: 0px;
-        }
-    </style>
-    <title>Rajeeva Acharya Resume</title>
+	<!-- begin meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="This is a simple and elegant navigation menu built with HTML5 and CSS3.">
+    <meta name="keywords" content="HTML5, CSS3, navigation, navigation menu, gray">
+    <meta name="author" content="Ixtendo">
+	<!-- end meta -->
+	
+	<!-- begin CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/html5-reset.css" type="text/css" rel="stylesheet">
+	<!-- end CSS -->
+	
+	<!-- begin JS -->
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script> 
+	<script src="js/modernizr-2.0.6.min.js" type="text/javascript"></script> 
+	<script src="js/app.js" type="text/javascript"></script> 
+	<!-- end JS -->
+	
+    <title>Rajeeva Acharya</title>
 </head>
+
 <body>
-    <input type="button" value="Print" onclick="printPage()" />
-    <input type="button" value="Expand" id="expand_panel" />
-    <div>
-		<a href="http://github.com/acharyarajiv">
-			<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-		</a>
-        <center><h1  class="margin_zero">Rajeeva Acharya</h1>rajeeva.acharya@collabera.com</center>
-    </div><br/>
-    <div class="test_accordion">
-        <h2 class="margin_zero">Present Summary: </h2>
-        <div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></td>
-                        <td>Collabera Solutions</td>
-                    </tr>
-                    <tr>
-                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></td>
-                        <td>Senior Engineer (Developer)</td>
-                    </tr>
-                    <tr>
-                        <td><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></td>
-                        <td>5 months</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--<div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
-                <span class="value">Collabera Solutions</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Senior Engineer (Developer)</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
-                <span class="value">5 months</span>
-            </div>-->
-        </div>
-        <h2 class="margin_zero">Past Summary: </h2>
-        <div>
-            <div></div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Company: &nbsp;</b></span>
-                <span class="value">Pointcross Pvt Ltd </span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                <span class="value">Senior Engineer (Developer)</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Experience: &nbsp;</b></span>
-                <span class="value">2.6 Years (Jan - 2010 to Sept-2012)</span>
-            </div>
-        </div>
-         <h2 class="margin_zero">Education: </h2>
-        <div>
-            <div></div>
-            <div class="table">
-                <span class="value">B Tech in Instrumentation Technology, Visvesvaraya Technological University, Belgaum, India, 2005-2009</span>
-            </div>
-            <div class="table">
-                <span class="value">12th, (Physics, Chemistry, Math, Biology), PU Board, Bangalore, 2002</span>
-            </div>
-            <div class="table">
-                <span class="value">10th, State Board, Karnataka</span>
-            </div>
-        </div>
-         <h2 class="margin_zero">Technical Skills: </h2>
-        <div>
-            <div></div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Technical Skills: &nbsp;</b></span>
-                <span class="value">Windows XP/7</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Language: &nbsp;</b></span>
-                <span class="value">NET Framework 3.5/3.0/2.0, ASP.NET 2.0,C#, VB.NET, ADO.NET, XML, XSL, Ext-JS, JavaScript, Ajax, HTML, CSS and Object Oriented JavaScript, jQuery, Node-Js.</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Database: &nbsp;</b></span>
-                <span class="value">Oracle 9i/10g, SQL Server 2008, PostgresSQL 9, Redis</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
-                <span class="value">TortoiseSVN, Team Foundation Server, Git-Hub</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Code repository: &nbsp;</b></span>
-                <span class="value">Solr 3.3, R-Project, Fiddler</span>
-            </div>
-            <div class="table">
-                <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Secondary Skills (Domain experience): &nbsp;</b></span>
-                <span class="value">Pharmaceutical</span>
-            </div>
-        </div>
-        <h2 class="margin_zero">Experience: </h2>
-        <div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #1: &nbsp;</b></span>
-                    <span class="value">Node_Redis</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">Microsoft</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div id="collapse_inline">Redis is an open-source, networked, in-memory, key-value data store with optional durability. It�s a NoSQL DB written is ANSI. Work here primarily involves supporting automation of unit test cases by building up a wrapper for Redis using Node-Js. The functions of Redis is exposed in Node-Js thus providing a way to simulate input and output of Redis commands</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Involved in coding and designing the functional modules</li>
-                            <li>Logical analysis for the functional flow of the module</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">Node-Js, Redis</span>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #2: &nbsp;</b></span>
-                    <span class="value">Test Harness</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">In-House</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div>Test harness is a product which checks the accessibility of a website. Accessibility checks includes supporting various MAS rule and after the rules are checked reports and graphs generated to which presents the overall pass/fails test percentage of the website</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
-                            <li>Understand and analyze the technical requirements and the functional specifications of the product to be developed</li>
-                            <li>Follow the Microsoft best practices and guidelines for the Microsoft project initiatives</li>
-                            <li>Prepare and provide weekly status reports on the progress of the projects to the PMs</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">.Net MVC4, jQuery, MSSQL 2008</span>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #3: &nbsp;</b></span>
-                    <span class="value">SDIS and ToxVision Development</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">Food and Drug Administration USA (FDA), Roche, Ipsen, ISIS</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div>SDIS is a product developed for pharmaceutical industries which normalizes data from source systems and reports into a single searchable data and metadata library. SDIS software searches the study data to extract identifiable patterns within the study. ToxVision++ is a multi-study viewer is used to review and analyze regulatory data submissions. The user can customize the ToxVision view by filtering and sorting data based on his/her interest. User can also view graphs and export data to various formats like XML, Excel, Word, XPT, and CSV. The module involves MVC architecture implementation where in View is handled by EXT-JS and model is COM Assembly. Various export formats are exported either by using openXML or OLEDB</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Handled a team consisting of 4 people within a Scrum environment</li>
-                            <li>Capture Functional Design Specification</li>
-                            <li>Follow the best practices and guidelines for the project initiatives</li>
-                            <li>Regressive R & D to explore new possibilities</li>
-                            <li>Assisting team with code development, code review and deployment</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">Ext-JS, OO-JS, C#, WCF, Solr 3.3, XSLT, Oracle and PostgresSql PLSQL</span>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #4: &nbsp;</b></span>
-                    <span class="value">ToxVision and ToxVision++ Development</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">Food and Drug Administration USA (FDA) and Johnson and Johnson (JnJ)</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div>ToxVision is an online Data Viewer, a tool of choice to view GLP nonclinical study data from any source developed for pharmaceuticals clients� esp. FDA. The development involves enhancement of forms using and for fetching data from Database. Each view is a HTML form and is made interactive using iframes, spans and Object oriented JavaScript techniques and the data is rendered by a set of thematic sql queries which is nothing but pre written sql functions which would be stored and executed on client requests</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Handled a team consisting of 4 people within a Scrum environment</li>
-                            <li>Capture Functional Design Specification</li>
-                            <li>Development of application on different layers(UI, Web Service, backend, Database)</li>
-                            <li>Follow the best practices and guidelines for the project initiatives</li>
-                            <li>Regressive R & D to explore new possibilities</li>
-                            <li>Assisting team with code development, code review and deployment</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">XSL/XHTML, CSS, JavaScript, Asp, ADO.net(C#), Oracle PLSQL</span>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #5: &nbsp;</b></span>
-                    <span class="value">MetaTaxonomy (ETL)</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">Pointcross Pvt Ltd (In-House Project)</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div>The Project involved processing of NCI Metathesaurus large data.NCI Metathesaurus is an online pharma dictionary consisting of pharmaceutical terms and its synonyms. Project included identifying reading and filtering the desired columns/Data and extracting the Data, its related meaning and synonyms and importation into Database. Most of the RDBMS techniques like ONE-ONE, ONE-MANY and MANY-MANY relations etc. were involved across different DB tables</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Designing of a Database ER module</li>
-                            <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
-                            <li>Did performance and scalability test and improved the same wherever needed</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">C# ADO.net, Oracle and PostgresSQL</span>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Project Name #6: &nbsp;</b></span>
-                    <span class="value">DSSTox and SDF</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Client Name: &nbsp;</b></span>
-                    <span class="value">Innovative Medicines Initiative (IMI), Food and Drug Administration USA (FDA), Johnson and Johnson (JnJ)</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Role: &nbsp;</b></span>
-                    <span class="value">Developer</span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Description: &nbsp;</b></span>
-                    <span class="value">
-                        <div>The Project involved generation of Structure Data Format (SDF) files, commonly known as SD Files, that adhere to a strict format for representing multiple chemical structure records and associated data fields fetched from database by manipulation of SQL queries and reading definition/format from an XML file. The ETL part consisted of Extract data from an Excel, CSV or XPT using OLEDB and loading into our Universal Data Model (DB)</div>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Responsibilities: &nbsp;</b></span>
-                    <span class="value">
-                        <ol>
-                            <li>Designing of a Database ER module</li>
-                            <li>Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database</li>
-                            <li>Did performance and scalability test and improved the same wherever needed</li>
-                            <li>Developed a tool to validate the SD files which reduced manual comparison of the files</li>
-                        </ol>
-                    </span>
-                </div>
-                <div class="table">
-                    <span class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;Environment: &nbsp;</b></span>
-                    <span class="value">C#, VB Macro, Oracle PLSQL, HTML</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        function printPage() {
-            window.print();
-        }
-        $(function () {
-            $(".test_accordion").accordion({
-                collapsible: true,
-                active: false,
-                heightStyle: "content"
-            });
-            $('#expand_panel').click(function () {
-                if (this.value == 'Collapse') {
-                    this.value = 'Expand';
-                    $(".test_accordion .ui-accordion-content").hide();
-                } else {
-                    this.value = 'Collapse';
-                    $(".test_accordion .ui-accordion-content").show();
-                }
-            });
-        });
-    </script>
+<header id="header">
+	<div><center class="site-title">Rajeeva Acharya</center></div>
+	<div style="float:right; margin:-2em 3% 0 0">
+		<img src="http://m.c.lnkd.licdn.com/mpr/pub/image-m3DBp1jIU8_9iLFSTTtH6LxdWfTE5zEWNgDKJcLlW_WR5cU-m3DKHz8IWXeRjF0QnloO/rajiv-acharya.jpg"/>
+		<br/>
+		<a href="https://dl.dropboxusercontent.com/s/osn8iois7xo50tr/Rajeeva_Acharya_Resume.docx?dl=1&token_hash=AAHSROiW8kqVAmeCZJFSooOtQYM7YUpSLlp_q3PxhOMZfA style="font-size: larger">Download Resume</a>
+	</div>
+    <!-- begin navigation -->
+	<nav id="navigation">
+		<ul>
+			<li><a href="#about_me" value="about_me">About Me</a></li>
+			<li><a href="#work_exp" value="work_exp">Work experience</a></li>
+			<li><a href="#education" value="education">education</a></li>
+			<li><a href="#technical_skills" value="technical_skills">Technical Skills</a></li>
+			<li><a href="#projects" value="projects">Projects</a></li>
+			<li><a href="#contact" value="contact">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- end navigation -->
+  </header>
+  <!-- begin container -->
+	<div id="container" style="width: 80%; margin: 10px auto 0;">
+		<div class="sections largefont" id="about_me">
+		<h2 class="margin_zero">Summary: </h2>
+			<div><br/><br/>
+				<div>
+					* Presently working as a Senior Software Engineer with Microsoft Interoperability<br/>
+					* Have 4+ years of IT experience<br/>
+					* Have complete exposure to full life cycle of the software development process including<br/>
+					<text class="subpoints">o proof of concept, design, development, testing and maintenance</text><br/>
+					* Experience in building end to end applications using .Net framework
+					<div class="subpoints">
+						o Backend and middle tier functionalities: C#, MSSQL Server, Oracle 10g, WCF , MVC & LINQ, XML, Node.js<br/>
+						o UI/Representation Layer: HTML5,CSS3, Javascript Framework( EXT-Js, jQuery)<br/>
+						o Testing/Automation: Node.js, mocha, grunt, Visual testing tools<br/>
+					</div>
+					* 1+ years of experience on Windows Azure IaaS & PaaS<br/>
+					* Handled Demos to Clients, Project Effort Estimation, Team Management, Mentoring team members<br/>
+					* Experience on Waterfall and Agile scrum SDLC models<br/>
+				</div>
+			</div>
+		</div>
+		<div class="sections largefont" id="work_exp">
+			<h2 class="margin_zero">Work Experience: </h2>
+			<div>
+				<br/>
+				<span><b>Senior Software Engineer at <a href="http://brillio.com/">Brillio (former Collabera Solutions)</a></b><br/>
+				December 2012 - Present(<text class="grey" id="total_exp_present">1 year 4 months</text>)</span><br/><br/>
+				
+				<span><b>Software & Solution Developer at <a href="http://www.pointcrosslifesciences.com/">PointCross Life Sciences</a></b><br/>
+				January 2010 - September 2012(<text class="grey">2 years 9 months</text>)</span><br/><br/>
+			</div>        
+		</div>
+		<div class="sections largefont" id="education">
+			<h2 class="margin_zero">Education: </h2>
+			<div><br/>
+				<span><b>Visvesvaraya Technological University Belgaum, R.N.S. Institute of Technology</b><br/>
+				Bachelor of Engineering, Instrumentation Technology, Aggregate: 65.5%, Year: 2005-2009</span><br/><br/>
+				
+				<span><b>Karnataka State Board, S.R.P.S Pre-University</b><br/>
+				(Physics, Chemistry, Math, Biology), PU Board, Aggregate: 78.8%, Year: 2003-2005</span><br/><br/>
+				
+				<span><b>10th, Karnataka State Board, Tagore Memorial Boys School</b><br/>
+				Aggregate: 73.3%, Year: 2003</span><br/><br/>
+			</div>        
+		</div>
+		<div class="sections largefont" id="technical_skills">
+			<h2 class="margin_zero">Technical Skills: </h2>
+			<br/>
+			<table>
+				<tr>
+				<td><b>Cloud Technologies: </b></td>
+				<td>Windows Azure</td>
+				</tr>
+				<tr>
+				<td><b>Web Technologies: </b></td>
+				<td>ASP.Net, MVC, HTML5 CSS3, AJAX, Ext-Js, jQuery, Javascript, Node.js, REST services</td>
+				</tr>
+				<tr>
+				<td><b>Markup Languages: </b></td>
+				<td>HTML5, XML</td>
+				</tr>
+				<tr>
+				<td><b>Windows Technologies: </b></td>
+				<td>Windows Forms</td>
+				</tr>
+				<tr>
+				<td><b>Languages: </b></td>
+				<td>C#, JavaScript</td>
+				</tr>
+				<tr>
+				<td><b>Frameworks: </b></td>
+				<td>Microsoft .Net 4.5/4.0/ 3.5/2.0, Entity Framework, LINQ, ADO.NET</td>
+				</tr>
+				<tr>
+				<td><b>Operating System: </b></td>
+				<td>Windows XP Pro / Server 2003 / Server 2008/R2/ Windows 7/8/8.1, Ubuntu 10.2</td>
+				</tr>
+				<tr>
+				<td><b>SOA: </b></td>
+				<td>WCF</td>
+				</tr>
+				<tr>
+				<td><b>Scripting Language: </b></td>
+				<td>PowerShell script, Batch script, Python script</td>
+				</tr>
+				<tr>
+				<td><b>Database: </b></td>
+				<td>Microsoft SQL Server 2005/2008/R2, Oracle 10g, SQL Azure</td>
+				</tr>
+				<tr>
+				<td><b>Source Code Repository: </b></td>
+				<td>TFS, Github, BitBucket, Tortoise SVN</td>
+				</tr>
+				<tr>
+				<td><b>Other Tools/Engine: </b></td>
+				<td>VS 2010/2012, IIS 7/8, R-Scripting, XSLT, Solr 3.3, Fiddler, PostgreSQL 9.1.8, Redis</td>
+				</tr>
+				<tr>
+				<td><b>Unit Test Framework Tools: </b></td>
+				<td>NUnit, Mocha, Grunt, Jasmine, Nock, QUnit, Cruise Control.Net, Travis</td>
+				</tr>
+				<tr>
+				<td><b>Secondary Skills (Domain experience): </b></td>
+				<td>Pharmaceutical</td>
+				</tr>				
+				</table>
+		</div>			
+		<div class="sections largefont" id="projects">
+			<h2 class="margin_zero">Projects: </h2><br/>
+			<div class="collapsible">
+				<text style="float: left">+</text>
+				<center><b>MS Interoperability <text style="float: right">Feb 2013 - Till Date</text></b></center>
+				<div>
+					<br/>
+					<table>
+						<tr>
+							<td>Client: </td>
+							<td>Microsoft</td>
+						</tr>
+						<tr>
+							<td>Role: </td>
+							<td>Software Developer/Tester</td>
+						</tr>
+						<tr>
+							<td>Description: </td>
+							<td><p>
+								Windows Azure has taken a big step into the Open source world with tools that enable Interoperability of Windows Azure with open source Technologies. This project involves building APIs and Automation test frameworks for testing these Interoperable Azure Tools. MS Interoperability won the Group Excellence Award for the 3rd Quarter and Annual award, 2012 at Collabera.
+							</p></td>
+						</tr>
+						<tr>
+							<td>Responsibilities: &nbsp;</td>
+							<td><br/>* Effort Estimation<br/>
+								* Research on open source tools and technologies<br/>
+								* Analyzing project requirements and creating Test Plans<br/>
+								* Code Analysis, Automation of tests and integration to TFS<br/>
+								* Providing technical solutions to the team and mentoring team members<br/>
+								* Bug Fixing and enhancement of existing codes<br/>
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>Environment: </td>
+							<td> VS2010/VS2012, ASP.Net MVC 4, SQL Server 2008 R2, Visual Studio Testing tool, Node JS,
+								Windows Azure, SQL Azure, Web Performance/Load Testing using VS 2010, Shell scripting, OData							</td>
+						</tr>
+					</table>
+				</div>
+			</div>			
+			<br/>
+			<div class="collapsible"><text style="float: left">+</text>
+				<center><b>Test Harness <text style="float: right">Dec 2012 - Feb 2013</text></b></center>
+				<div>
+					<br/>
+					<table>
+						<tr>
+							<td>Client: </td>
+							<td>Collabera (In House)</td>
+						</tr>
+						<tr>
+							<td>Role: </td>
+							<td>Software Developer Engineer</td>
+						</tr>
+						<tr>
+							<td>Description: </td>
+							<td><p>
+								Test harness is a product which checks the accessibility of a website. Accessibility checks includes supporting various MAS rule and after the rules are checked reports and graphs generated to which presents the overall pass/fails test percentage of the website
+							</p></td>
+						</tr>
+						<tr>
+							<td>Responsibilities: &nbsp;</td>
+							<td><br/>* Understand and analyze the technical requirements and the functional specifications of the product to be developed<br/>
+								* Design user interfaces (UI) by using conceptual design techniques such as creating visual mockups, prototypes, and diagrams<br/>
+								* Follow the Microsoft best practices and guidelines for the Microsoft project initiatives<br/>
+								* Prepare and provide weekly status reports on the progress of the projects to the PMs<br/>
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>Environment: </td>
+							<td>
+								VS2010, .Net 4, WCF- REST, MVC4, jQuery, SQL Server 2008 R2, TFS
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>			
+			<br/>
+			<div class="collapsible"><text style="float: left">+</text>
+				<center><b>SDIS and ToxVision Development <text style="float: right">Mar 2011 - Sep 2012</text></b></center>
+				<div>
+					<br/>
+					<table>
+						<tr>
+							<td>Clients: </td>
+							<td>Food and Drug Administration USA (FDA), Roche, Ipsen, ISIS</td>
+						</tr>
+						<tr>
+							<td>Role: </td>
+							<td>Developer/Module Lead</td>
+						</tr>
+						<tr>
+							<td>Description: </td>
+							<td><p>
+								SDIS is a product developed for pharmaceutical industries which normalizes data from source systems and reports into a single searchable data and metadata library. SDIS software searches the study data to extract identifiable patterns within the study. ToxVision++ is a multi-study viewer is used to review and analyze regulatory data submissions. The user can customize the ToxVision view by filtering and sorting data based on his/her interest. User can also view graphs and export data to various formats like XML, Excel, Word, XPT, and CSV. The module involves MVC architecture implementation where in View is handled by EXT-JS and model is COM Assembly. Various export formats are exported either by using openXML or OLEDB
+							</p></td>
+						</tr>
+						<tr>
+							<td>Responsibilities: &nbsp;</td>
+							<td><br/>* Handled a team consisting of 4 people within a Scrum environment<br/>
+								* Capture Functional Design Specification<br/>
+								* Follow the best practices and guidelines for the project initiatives<br/>
+								* Regressive R & D to explore new possibilities<br/>
+								* Assisting team with code development, code review and deployment<br/>
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>Environment: </td>
+							<td>
+								.Net 4, C# Ext-Js, Solr 3.3, Oracle 10g, WCF-REST, R-Scripts
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>			
+			<br/>
+			<div class="collapsible"><text style="float: left">+</text>
+				<center><b>ToxVision and ToxVision++ Development. <text style="float: right">May 2010 - Nov 2011</text></b></center>
+				<div>
+					<br/>
+					<table>
+						<tr>
+							<td>Clients: </td>
+							<td>Food and Drug Administration USA (FDA) and Johnson, Roche Johnson and Johnson (JnJ)</td>
+						</tr>
+						<tr>
+							<td>Role: </td>
+							<td>Developer/Module Lead</td>
+						</tr>
+						<tr>
+							<td>Description: </td>
+							<td><p>
+								ToxVision is an online Data Viewer, a tool of choice to view GLP nonclinical study data from any source developed for pharmaceuticals clients esp. FDA. The development involves enhancement of forms using and for fetching data from Database. Each view is a HTML form and is made interactive using Ext-js, iframes, spans and Object oriented JavaScript techniques and the data is rendered by a set of thematic sql queries which is nothing but pre written sql functions which would be stored and executed on client requests
+							</p></td>
+						</tr>
+						<tr>
+							<td>Responsibilities: &nbsp;</td>
+							<td><br/>* Handled a team consisting of 3 people within a Scrum environment<br/>
+								* Capture Functional Design Specification and handling ETL Module for the product<br/>
+								* Development of application on different layers(UI, Web Service, backend, Database)<br/>
+								* Writing complex Thematic queries<br/>
+								* Follow the best practices and guidelines for the project initiatives<br/>
+								* Assisting team with code development, code review and deployment<br/>
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>Environment: </td>
+							<td>
+								 Ext-js XSL/XHTML, JavaScript, Asp, ADO.net(C#), Oracle PLSQL
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>			
+			<br/>
+			<div class="collapsible"><text style="float: left">+</text>
+				<center><b>MetaTaxonomy (ETL) <text style="float: right">Feb 2010 - Jul 2010</text></b></center>
+				<div>
+					<br/>
+					<table>
+						<tr>
+							<td>Client: </td>
+							<td>PointCross (In House)</td>
+						</tr>
+						<tr>
+							<td>Role: </td>
+							<td>Developer</td>
+						</tr>
+						<tr>
+							<td>Description: </td>
+							<td><p>
+								The Project involved processing of NCI Metathesaurus large data. NCI Metathesaurus is an online pharma dictionary consisting of pharmaceutical terms and its synonyms. Project included identifying reading and filtering the desired columns/Data and extracting the Data, its related meaning and synonyms and importation into Database. Most of the RDBMS techniques like ONE-ONE, ONE-MANY and MANY-MANY relations etc. were involved across different DB tables.
+							</p></td>
+						</tr>
+						<tr>
+							<td>Responsibilities: &nbsp;</td>
+							<td><br/>* Designing of a Database ER module<br/>
+								* Involved in ETL process which included reading a large chunks of data, data mapping and insertion into database<br/>
+								* Did performance and scalability test and improved the same wherever needed<br/>
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>Environment: </td>
+							<td>
+								 .Net 2.0, Winforms, ADO.Net, Oracle 10g, 9i, PostgreSQL 8, 9
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>			
+			<br/>
+		</div>
+		<div class="sections largefont" id="contact">
+			<div>
+				<br/>
+				<table style="width:60%">
+					<tr>
+						<td>
+							<span><b>Email: </b><br/>
+							acharya.rajiv@gmail.com</span><br/><br/>
+						</td>
+						<td style="float:right;padding-right:32%">
+							<span><b>Phone No: </b><br/>
+							+919538029897</span><br/>
+						</td>
+					</tr>
+					<tr>
+						<td><br/>
+							<span><b>View and Contact via: </b><br/>
+							<br/>
+							<a href="http://www.linkedin.com/pub/rajiv-acharya/16/196/359" title="View and contact via LinkedIn"><img alt="LinkedIn_Logo16px.png" class="jive-image" src="https://dlc1-s.licdn.com/sites/default/files/Logo-59px-R.png"></a><br/><br/>
+						</td>
+						<td style="float:right"><br/>
+							<span><b><text>Follow me in: </text></b></span><br/>
+							<a href="https://github.com/acharyarajiv" title="Follow me in Github"><img alt="Github-logo" class="gh-logo" src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Logo.png" width="220"></a><br/><br/>
+						</td>
+					</tr>
+				</table>
+				<br/>
+			</div>  
+		</div>
+	</div>
+<!-- end container -->
 </body>
 </html>
