@@ -1,0 +1,27 @@
+{
+  "name": "Resume",
+  "version": "0.0.1",
+  "description": "A sample resume",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acharyarajiv/acharyarajiv.github.io"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Rajeeva",
+  "license": "BSD",
+  "gitHead": "7a3af2fcc2c19801583ec7bf56d27c0f2e7c9ffd"
+}
